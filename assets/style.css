@@ -167,13 +167,19 @@ footer { margin: 0; padding-top: 1.4rem; padding-bottom: 1.4rem; }
   margin-top: 1.2rem;
 }
 .pick { margin: 0; }
+.shot {
+  height: 420px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #e4e1da;
+  background: #fff;
+}
 .pick img {
   width: 100%;
   height: auto;
-  object-fit: contain;
-  object-position: top;
-  border-radius: 12px;
-  border: 1px solid #e4e1da;
+  display: block;
+  border: 0;
+  border-radius: 0;
 }
 .num {
   display: flex;
@@ -194,5 +200,5 @@ footer { margin: 0; padding-top: 1.4rem; padding-bottom: 1.4rem; }
 
 @media (max-width: 700px) {
   .picks { grid-template-columns: repeat(2, 1fr); }
-  .pick img { height: auto; }
+  .shot { height: 280px; }
 }
