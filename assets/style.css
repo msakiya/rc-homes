@@ -153,3 +153,32 @@ footer { margin: 0; padding-top: 1.4rem; padding-bottom: 1.4rem; }
   .hero { min-height: 88vh; padding-top: 16vh; }
   .choice { grid-template-columns: 1fr; }
 }
+
+.picker {
+  width: min(860px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3.2rem 0 4rem;
+}
+.pick { margin: 0 0 2.2rem; }
+.pick img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #e4e1da;
+  box-shadow: 0 12px 30px rgba(27,42,71,.08);
+}
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0.9rem auto 0;
+  border-radius: 50%;
+  background: #e18544;
+  color: #fff;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.num:hover { background: #c96d2e; }
