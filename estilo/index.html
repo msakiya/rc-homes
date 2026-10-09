@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estilo Otter | República Cocinera</title>
+<link rel="icon" href="https://republicacocinera.com/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#1b2a47; --orange:#e18544; --paper:#f4f3ef; --ink:#1c1e24; --muted:#5e6572; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:Montserrat,sans-serif; color:var(--ink); background:#fff; }
+  a { color:inherit; }
+  img { max-width:100%; display:block; }
+  .nav { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.85rem 6vw; background:#fff; border-bottom:1px solid #eceae4; }
+  .nav img { height:42px; }
+  .nav nav { display:flex; gap:1.3rem; align-items:center; }
+  .nav nav a { text-decoration:none; font-size:.92rem; color:var(--navy); font-weight:600; }
+  .btn { display:inline-block; background:var(--orange); color:#fff; text-decoration:none; font-weight:700; border-radius:999px; padding:.85rem 1.3rem; }
+  .btn.line { background:#fff; color:var(--navy); border:1px solid #d9d6cf; }
+  .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:3rem; align-items:center; padding:4.5rem 6vw 3.5rem; max-width:1180px; margin:0 auto; }
+  .kicker { letter-spacing:.14em; text-transform:uppercase; color:var(--orange); font-size:.75rem; font-weight:700; margin:0 0 .8rem; }
+  h1 { font-family:Poppins,sans-serif; font-weight:500; font-size:clamp(2.4rem,4.6vw,3.8rem); line-height:1.05; color:var(--navy); margin:0 0 1rem; }
+  .lead { font-size:1.12rem; color:#3c4250; max-width:34rem; margin:0 0 1.5rem; }
+  .hero-photo { border-radius:22px; overflow:hidden; min-height:420px; background:var(--navy) center/cover no-repeat; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); background:var(--navy); color:#fff; }
+  .stats div { padding:1.5rem 1rem; text-align:center; }
+  .stats b { display:block; font-family:Poppins,sans-serif; font-weight:500; font-size:1.7rem; }
+  .stats span { color:#c9ced8; font-size:.9rem; }
+  section { padding:4.2rem 6vw; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h2 { font-family:Poppins,sans-serif; font-weight:500; font-size:clamp(1.8rem,3vw,2.5rem); color:var(--navy); margin:0 0 .4rem; }
+  .sub { color:var(--muted); margin:0 0 1.8rem; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+  .card { background:var(--paper); border-radius:16px; padding:1.3rem 1.15rem 1.4rem; }
+  .card b { display:block; color:var(--navy); font-size:1.05rem; margin-bottom:.35rem; }
+  .card p { margin:0; color:#444; font-size:.95rem; }
+  .plans { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+  .plan { border:1px solid #e4e1da; border-radius:18px; padding:1.3rem 1.2rem 1.4rem; display:flex; flex-direction:column; }
+  .plan img { height:150px; width:100%; object-fit:cover; border-radius:12px; margin-bottom:1rem; }
+  .plan span { color:var(--orange); font-size:.75rem; font-weight:700; letter-spacing:.08em; }
+  .plan h3 { font-family:Poppins,sans-serif; font-weight:500; font-size:2rem; color:var(--navy); margin:.2rem 0; }
+  .plan p { color:#444; margin:0 0 1rem; }
+  .plan .btn { margin-top:auto; text-align:center; }
+  .checks { display:grid; grid-template-columns:1fr 1fr; gap:.7rem 2rem; list-style:none; padding:0; margin:0; }
+  .checks li { padding:.35rem 0 .35rem 1.4rem; position:relative; }
+  .checks li::before { content:""; position:absolute; left:0; top:.7rem; width:8px; height:8px; border-radius:50%; background:var(--orange); }
+  .band { background:var(--navy); color:#fff; border-radius:22px; padding:2.4rem 2rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+  .band h2, .band p { color:#fff; }
+  footer { padding:1.3rem 6vw 2rem; color:var(--muted); display:flex; justify-content:space-between; }
+  @media (max-width:900px) {
+    .hero, .grid4, .plans, .checks, .stats { grid-template-columns:1fr 1fr; }
+    .hero { grid-template-columns:1fr; }
+    .nav nav a:not(.btn) { display:none; }
+    .band { flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+<header class="nav">
+  <a href="https://republicacocinera.com/"><img src="https://republicacocinera.com/img/logotipo-top.svg" alt="República Cocinera" style="filter:brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(1400%) hue-rotate(182deg);"></a>
+  <nav>
+    <a href="https://republicacocinera.com/cocinas">Cocinas</a>
+    <a href="https://republicacocinera.com/cobertura">Cobertura</a>
+    <a href="https://republicacocinera.com/hub-gastronomico">Hub</a>
+    <a class="btn" href="https://republicacocinera.com/formulario">Agendar cita</a>
+  </nav>
+</header>
+<section class="hero">
+  <div>
+    <p class="kicker">Dark kitchens en Surquillo</p>
+    <h1>Una cocina lista para operar, no un local por armar.</h1>
+    <p class="lead">Elige el tamaño, entra al hub y despacha en los distritos que más piden. La licencia, el despacho y la salida a la Vía Expresa ya están.</p>
+    <a class="btn" href="https://republicacocinera.com/formulario">Agendar cita</a>
+  </div>
+  <div class="hero-photo" style="background-image:url('https://republicacocinera.com/img/republica-cocinera-peru.jpg')"></div>
+</section>
+<div class="stats">
+  <div><b>30 años</b><span>en gastronomía</span></div>
+  <div><b>3 tamaños</b><span>17, 32 y 44 m²</span></div>
+  <div><b>10 distritos</b><span>en un radio de 5 km</span></div>
+  <div><b>Surquillo</b><span>Vía Expresa y Angamos</span></div>
+</div>
+<section>
+  <div class="wrap">
+    <h2>Por qué operar aquí</h2>
+    <p class="sub">Lo que un operador necesita el primer mes, ya resuelto.</p>
+    <div class="grid4">
+      <article class="card"><b>Un solo flujo</b><p>Produces, entregas a la moto y el pedido sale. Sin salón ni mesas.</p></article>
+      <article class="card"><b>Hecho para el ritmo</b><p>Cocina, despacho y patio de maniobras separados.</p></article>
+      <article class="card"><b>Una dirección</b><p>Av. Paseo de la República 4979. Sales directo a la vía rápida.</p></article>
+      <article class="card"><b>Sin armar el local</b><p>Campana, agua, gas y tomas vienen con la cocina.</p></article>
+    </div>
+  </div>
+</section>
+<section style="background:#f7f6f3; padding-top:3.2rem;">
+  <div class="wrap">
+    <h2>Tres cocinas. Eliges según el volumen.</h2>
+    <p class="sub">La ficha técnica sigue en Cocinas. Aquí solo el tamaño y para quién sirve.</p>
+    <div class="plans">
+      <article class="plan">
+        <img src="https://republicacocinera.com/img/cocinas/cocina-small-1.jpg" alt="Cocina Small">
+        <span>SMALL</span>
+        <h3>17 m²</h3>
+        <p>Una marca, un concepto. Para empezar sin sobredimensionar.</p>
+        <a class="btn" href="https://republicacocinera.com/cocinas">Ver cocina</a>
+      </article>
+      <article class="plan">
+        <img src="https://republicacocinera.com/img/cocinas/cocina-medium-1.jpg" alt="Cocina Medium">
+        <span>MEDIUM</span>
+        <h3>32 m²</h3>
+        <p>Para crecer el menú sin mudarte de dirección.</p>
+        <a class="btn" href="https://republicacocinera.com/cocinas">Ver cocina</a>
+      </article>
+      <article class="plan">
+        <img src="https://republicacocinera.com/img/cocinas/cocina-large-1.jpg" alt="Cocina Large">
+        <span>LARGE</span>
+        <h3>44 m²</h3>
+        <p>Alto volumen. Más estación y más salida de pedidos.</p>
+        <a class="btn" href="https://republicacocinera.com/cocinas">Ver cocina</a>
+      </article>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Qué ya no tienes que resolver</h2>
+    <ul class="checks">
+      <li>Licencia de funcionamiento del local</li>
+      <li>Zona de despacho y estacionamiento de motos</li>
+      <li>Vigilancia y mantenimiento del edificio</li>
+      <li>Salida a la Vía Expresa, a una cuadra de Angamos</li>
+      <li>Cobertura sobre Miraflores, San Isidro, Surco y Barranco</li>
+      <li>Visita al hub antes de decidir el tamaño</li>
+    </ul>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <h2>Mira la cocina antes de decidir.</h2>
+        <p>La visita es en el hub, en Surquillo.</p>
+      </div>
+      <a class="btn" href="https://republicacocinera.com/formulario">Agendar cita</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <span>Propuesta de home. No es el sitio publicado.</span>
+  <a href="https://republicacocinera.com/">Sitio actual</a>
+</footer>
+</body>
+</html>
