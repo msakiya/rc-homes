@@ -120,29 +120,36 @@ footer a { color: #fff; }
   .btn.light { margin: .7rem 0 0; }
 }
 
-body { background: #efece6; }
+body { background: #fff; }
 .nav, .hero, .section, footer, .chooser {
-  width: min(860px, calc(100% - 2rem));
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  padding-left: max(1.25rem, calc((100% - 860px) / 2));
+  padding-right: max(1.25rem, calc((100% - 860px) / 2));
 }
-.nav {
-  border-radius: 0 0 16px 16px;
-  top: 0;
-}
+.nav { top: 0; }
 .hero {
-  min-height: 460px;
-  border-radius: 18px;
-  margin-top: 1rem;
-  padding: 2.4rem 2rem 2.2rem;
+  min-height: 78vh;
+  margin-top: 0;
+  padding-top: 18vh;
+  padding-bottom: 8vh;
 }
-.section { padding: 2.2rem 0 0; }
-.facts { padding: 1.2rem 1.2rem; border-radius: 18px; margin-top: 1.4rem; }
-footer { border-radius: 16px; margin-top: 1.6rem; margin-bottom: 2rem; padding: 1.1rem 1.2rem; }
-.chooser { min-height: auto; border-radius: 18px; margin-top: 1.2rem; padding: 2.2rem 1.4rem 1.6rem; }
+.section { padding-top: 3.2rem; padding-bottom: 3.2rem; }
+.facts { border-radius: 0; margin-top: 0; }
+footer { margin: 0; padding-top: 1.4rem; padding-bottom: 1.4rem; }
+.chooser {
+  min-height: 100vh;
+  margin-top: 0;
+  padding-top: 10vh;
+  padding-bottom: 8vh;
+}
 .choice { grid-template-columns: 1fr; }
-.map img { height: 320px; }
-.wide { height: 280px; }
+.map img { height: 360px; }
+.wide { height: 360px; width: 100%; }
 @media (max-width: 860px) {
-  .hero { min-height: 380px; }
+  .hero { min-height: 88vh; padding-top: 16vh; }
+  .choice { grid-template-columns: 1fr; }
 }
