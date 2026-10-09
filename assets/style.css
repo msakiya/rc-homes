@@ -119,3 +119,30 @@ footer a { color: #fff; }
   .map img, .wide { height: 280px; }
   .btn.light { margin: .7rem 0 0; }
 }
+
+body { background: #efece6; }
+.nav, .hero, .section, footer, .chooser {
+  width: min(860px, calc(100% - 2rem));
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav {
+  border-radius: 0 0 16px 16px;
+  top: 0;
+}
+.hero {
+  min-height: 460px;
+  border-radius: 18px;
+  margin-top: 1rem;
+  padding: 2.4rem 2rem 2.2rem;
+}
+.section { padding: 2.2rem 0 0; }
+.facts { padding: 1.2rem 1.2rem; border-radius: 18px; margin-top: 1.4rem; }
+footer { border-radius: 16px; margin-top: 1.6rem; margin-bottom: 2rem; padding: 1.1rem 1.2rem; }
+.chooser { min-height: auto; border-radius: 18px; margin-top: 1.2rem; padding: 2.2rem 1.4rem 1.6rem; }
+.choice { grid-template-columns: 1fr; }
+.map img { height: 320px; }
+.wide { height: 280px; }
+@media (max-width: 860px) {
+  .hero { min-height: 380px; }
+}
